@@ -45,7 +45,7 @@ class GoogleTemplate(BaseTemplate):
         return lines
     
     def _generate_section_params(self, params: list[tuple[str, str]], indent: str) -> list[str]:
-        if len(param) == 0:
+        if len(params) == 0:
             return []
         
         lines = ["Args:"]
